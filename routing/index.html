@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<!-- lets you use icons -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+<script type="text/javascript" src="./axajPost.js">
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TITLE</title>
+  </head>
+    <nav class="level">
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Home</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Menu</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <img src="https://www.cryptomining247.com/images/cryptomining247_logo01.png" alt="" style="height: 30px;">
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Reservations</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Contact</a>
+      </p>
+    </nav>
+  <div class="column is-one-fifth is-one-quarter-mobile">
+          <img src="https://www.cryptomining247.com/images/cryptomining247_logo01.png" alt="">
+  </div>
+  <!-- Main content -->
+  <div class="columns">
+    <div class="column">
+    </div>
+    <div class="column is-half">
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title is-2">Title Text</h1>
+            <h2 class="subtitle">
+              <ul>
+                <li>Mine</li>
+                <li>Pay</li>
+                <li>Play</li>
+              </ul>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!--  COLUMNS -->
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <label class="label">Name</label>
+              <form id='myform' method="post" action="/users">
+
+              <div class="field">
+                <!-- FORM -->
+
+                  <div class="control">
+                    <input class="input"  name="name" type="text" id='fname' placeholder="e.g Alex Smith">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" name="email" type="email" id='femail' placeholder="e.g. alexsmith@gmail.com">
+                  </div>
+                    <div class="control">
+                      <button class="button is-link" onclick="buttonclick()" type="submit" value="Submit">Register</button>
+                  </div>
+
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <img src="https://www.cryptomining247.com/images/cryptomining247_logo01.png" alt="">
+    </div>
+  </div>
+
+
+
+  <body>
+  </body>
+</html>
