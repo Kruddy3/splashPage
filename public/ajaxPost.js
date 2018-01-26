@@ -26,14 +26,12 @@ $(function() {
           $("#femail").removeClass('input').addClass('input is-danger');
           var res = response[0]
           // $(".errorMsgLocation").click(function(){$("#cardBackground").show()})
-          $(".errorMsgLocation").append($('<div class="notification is-danger">'+ res +'<button class="delete"></button></div>'))
+          $(".errorMsgLocation").append($('<div class="notification is-danger">'+ res +'<button class="delete"></button></div>')).click(function(test){
+            $(this).children("div").remove()
+          })
 
         }
       }
     })
   })
-  $("button.delete").click(function(){
-   console.log("hello")
-   $(".notification").hide()
-})
 })
