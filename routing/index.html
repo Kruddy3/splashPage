@@ -50,9 +50,10 @@
       </section>
       <!--  COLUMNS -->
       <div class="columns">
-        <div class="column" id='signUp'>
+
+        <div class="column" >
           <div class="card">
-            <div class="card-content">
+            <div class="card-content" id='signUp'>
               <label class="label">Name</label>
 
 
@@ -60,24 +61,26 @@
                 <div class="field">
                   <!-- FORM -->
                     <div class="control">
-                      <input class="input" name="name" type="text" id='fname' placeholder="e.g Alex Smith">
+                      <input class="input" name="name" type="text" id='fname' placeholder="e.g Kevin Ruddy">
                     </div>
                 </div>
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control">
-                    <input class="input" type="email" name="email" type="email" id='femail' placeholder="e.g. alexsmith@gmail.com">
+                    <input class="input" type="email" name="email" type="email" id='femail' placeholder="e.g. kevinruddy@gmail.com">
                   </div>
                   <div class="control" id = "submit">
-                    <button id='btn' class="button is-link">Register</button>
+                    <button class="button is-link">Register</button>
                   </div>
                 </div>
-              <!-- </form> -->
 
 
             </div>
+            <div class="card-content" id='zuccessfulSignUp'>
+              <h2>Registration Successful</h2>
+            </div>
           </div>
-          <div class="columns">
+          <div class="columns" id='errorIdLoc'>
             <div class="column">
                 <!-- <div class="card-content"> -->
                   <div class='errorMsgLocation'></div>
@@ -87,6 +90,8 @@
 
           </div>
         </div>
+
+
         </div>
 
 

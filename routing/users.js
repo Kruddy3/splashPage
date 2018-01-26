@@ -17,7 +17,8 @@ module.exports = function (app) {
       res.send('zuccess')
     }, (err) => {
       res.json(_.map(err.errors, 'message'));
-
+      // res.send(500, response)
+      
       res.json(err);
     });
   });
