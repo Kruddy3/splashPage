@@ -16,3 +16,6 @@ overflow: hidden;
 .level a {
   color: white;
 }
+.notification{
+  background-color: #1c242d;
+}

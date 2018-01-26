@@ -3,9 +3,8 @@
 <link rel="stylesheet" type="text/css" href="./style.css">
 <!-- lets you use icons -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-<script type="text/javascript" src="./axajPost.js">
-
-</script>
+<script src="/jquery/jquery.js"></script>
+<script type="text/javascript" src="./ajaxPost.js"> </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,8 +32,7 @@
   </div>
   <!-- Main content -->
   <div class="columns">
-    <div class="column">
-    </div>
+    <div class="column"></div>
     <div class="column is-half">
       <section class="hero is-primary">
         <div class="hero-body">
@@ -52,43 +50,52 @@
       </section>
       <!--  COLUMNS -->
       <div class="columns">
-        <div class="column">
+        <div class="column" id='signUp'>
           <div class="card">
             <div class="card-content">
               <label class="label">Name</label>
-              <form id='myform' method="post" action="/users">
 
-              <div class="field">
-                <!-- FORM -->
 
-                  <div class="control">
-                    <input class="input"  name="name" type="text" id='fname' placeholder="e.g Alex Smith">
-                  </div>
+              <!-- <form id='myform' method="post"> -->
+                <div class="field">
+                  <!-- FORM -->
+                    <div class="control">
+                      <input class="input" name="name" type="text" id='fname' placeholder="e.g Alex Smith">
+                    </div>
                 </div>
-
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control">
-                    <input class="input" name="email" type="email" id='femail' placeholder="e.g. alexsmith@gmail.com">
+                    <input class="input" type="email" name="email" type="email" id='femail' placeholder="e.g. alexsmith@gmail.com">
                   </div>
-                    <div class="control">
-                      <button class="button is-link" onclick="buttonclick()" type="submit" value="Submit">Register</button>
+                  <div class="control" id = "submit">
+                    <button id='btn' class="button is-link">Register</button>
                   </div>
+                </div>
+              <!-- </form> -->
 
-              </div>
-              </form>
+
             </div>
           </div>
+          <div class="columns">
+            <div class="column">
+                <!-- <div class="card-content"> -->
+                  <div class='errorMsgLocation'></div>
+                <!-- </div> -->
+
+            </div>
+
+          </div>
         </div>
-      </div>
+        </div>
+
+
     </div>
     <div class="column">
       <img src="https://www.cryptomining247.com/images/cryptomining247_logo01.png" alt="">
     </div>
   </div>
-
-
-
   <body>
   </body>
+
 </html>
