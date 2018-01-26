@@ -11,8 +11,8 @@ module.exports = function (app) {
   app.post('/users', (req, res) => {
     const data = req.body;
     models.users.create(data).then((post) => {
-      //success
-      res.send('zuccess')
+      // success
+      res.send('zuccess');
     }, (err) => {
       res.json(_.map(err.errors, 'message'));
       // res.send(500, response)
