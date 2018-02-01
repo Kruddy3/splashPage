@@ -7,7 +7,7 @@ app.use(bodyparser.json());
 const routeHandler = require('./routing/users.js');
 
 app.use(express.static('public'));
-app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/jquery', express.static(`${__dirname}/node_modules/jquery/dist/`));
 
 
 routeHandler(app);

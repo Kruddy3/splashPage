@@ -20,13 +20,13 @@ $(() => {
           $('#signUp').hide();
           $('#errorIdLoc').hide();
           $('#zuccessfulSignUp').show();
-          $('#modalId').removeClass("modal").addClass('modal is-active').click(function(){$('#modalId').removeClass("is-active")});
+          $('#modalId').removeClass('modal').addClass('modal is-active').click(() => { $('#modalId').removeClass('is-active'); });
         } else {
           $('#femail').removeClass('input').addClass('input is-danger');
           const res = response[0];
           // $(".errorMsgLocation").click(function(){$("#cardBackground").show()})
           $('.errorMsgLocation').append($(`<div class="notification is-danger">${res}<button class="delete"></button></div>`)).children('.notification').click(function (test) {
-            $(this).slideUp(function() {
+            $(this).slideUp(function () {
               $(this).remove();
             });
           });
