@@ -8,7 +8,7 @@ Landing page with email registration
 ![](https://i.imgur.com/Y2v9aHr.gif)
 * Email uniqueness
 * Email verification
-* Visual error notificationsdfasdf
+* Visual error notifications
 * Clean animation
 * Obvious success message
 
